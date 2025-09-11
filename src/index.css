@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DIHAPUS: Hapus style body dengan gradien animasi dari sini */
+/* Biarkan file ini hanya berisi 3 baris @tailwind di atas */
