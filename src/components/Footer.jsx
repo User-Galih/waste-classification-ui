@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="mb-6">
           <p className="text-2xl font-bold mb-2">WasteClassifier</p>
-          <p className="text-sm text-slate-400">&copy; 2023. All rights reserved.</p>
+          <p className="text-sm text-slate-400">&copy; 2025. All rights reserved.</p>
         </div>
         <div className="flex justify-center space-x-6">
           <a href="#hero" className="text-slate-300 hover:text-primary transition-colors">Beranda</a>
