@@ -6,10 +6,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // 1. Efek Background Transparan ke Putih
+      // Deteksi gulir untuk efek background navbar
       setHasScrolled(window.scrollY > 50);
 
-      // 2. Logika Scroll Spy (Mendeteksi Seksi Aktif)
+      // Logika Scroll Spy untuk mendeteksi seksi yang aktif di layar
       const sections = ['hero', 'showcase', 'about'];
       const scrollPosition = window.scrollY + 100;
 
@@ -35,10 +35,17 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${hasScrolled ? 'bg-white/90 backdrop-blur-lg shadow-md py-2' : 'bg-transparent py-4'}`}>
       <nav className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#hero" className="flex items-center space-x-2">
-          <span className={`text-2xl font-bold transition-colors ${hasScrolled ? 'text-primary' : 'text-white'}`}>WasteClassifier</span>
+        {/* Logo dengan Ikon Daun Minimalis */}
+        <a href="#hero" className="flex items-center space-x-2 group">
+          <svg className={`w-10 h-10 transition-colors duration-300 ${hasScrolled ? 'text-primary' : 'text-white'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8h-5a7 7 0 0 1-5 10Z" />
+            <path d="M3 21.5V17" />
+            <path d="M3 13c0-4.42 3.58-8 8-8" />
+          </svg>
+          <span className={`text-2xl font-bold transition-colors duration-300 ${hasScrolled ? 'text-primary' : 'text-white'}`}>WasteClassifier</span>
         </a>
         
+        {/* Navigasi Desktop */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link.id}>
