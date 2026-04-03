@@ -28,7 +28,7 @@ const TechStackSection = () => {
       <div className="relative w-full overflow-hidden whitespace-nowrap py-4">
         <div className="inline-block animate-marquee group-hover:pause"> {/* Animasi marquee */}
           {doubledTechnologies.map((tech, index) => (
-            <div key={index} className="inline-block mx-8 p-4 bg-white rounded-lg shadow-md w-48 text-center border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div key={index} className="inline-block mx-8 p-4 bg-white rounded-3xl shadow-md w-48 text-center border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               {tech.logo ? (
                 <img src={tech.logo} alt={tech.name} className="h-16 w-16 mx-auto mb-4 object-contain"/>
               ) : (
@@ -42,7 +42,7 @@ const TechStackSection = () => {
           ))}
           {/* Untuk memastikan loop mulus, tambahkan duplikasi kedua */}
           {doubledTechnologies.map((tech, index) => (
-            <div key={`second-${index}`} className="inline-block mx-8 p-4 bg-white rounded-lg shadow-md w-48 text-center border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div key={`second-${index}`} className="inline-block mx-8 p-4 bg-white rounded-3xl shadow-md w-48 text-center border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               {tech.logo ? (
                 <img src={tech.logo} alt={tech.name} className="h-16 w-16 mx-auto mb-4 object-contain"/>
               ) : (
