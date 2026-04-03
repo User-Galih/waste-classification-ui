@@ -2,5 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
 /* DIHAPUS: Hapus style body dengan gradien animasi dari sini */
 /* Biarkan file ini hanya berisi 3 baris @tailwind di atas */
