@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      // PENAMBAHAN: Mendaftarkan Plus Jakarta Sans sebagai font sans default
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
         'primary': '#10B981', // Emerald-500
         'primary-dark': '#059669', // Emerald-600
@@ -20,25 +24,23 @@ export default {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        // BARU: Keyframes untuk slideshow gambar
         slideShow: {
           '0%, 100%': { transform: 'translateX(0%)' },
           '33%': { transform: 'translateX(-100%)' },
-          '66%': { transform: 'translateX(-200%)' }, // Sesuaikan dengan jumlah gambar
+          '66%': { transform: 'translateX(-200%)' }, 
         },
-        // BARU: Keyframes untuk scrolling logo
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
-        marquee2: { // Untuk menciptakan efek loop tak terhingga
+        marquee2: { 
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
       },
       animation: {
         fadeInUp: 'fadeInUp 0.7s ease-out forwards',
-        slideShow: 'slideShow 24s infinite ease-in-out', // 3 gambar x 8 detik per gambar = 24s
+        slideShow: 'slideShow 24s infinite ease-in-out',
         marquee: 'marquee 60s linear infinite',
         marquee2: 'marquee2 60s linear infinite',
       },
