@@ -44,7 +44,7 @@ const DetectorSection = () => {
   return (
     <div className="animate-fadeInUp mt-8"> {/* Memberi sedikit jarak dari header tab */}
       {/* Area Drop/Pilih Gambar yang lebih menarik */}
-      <div className="mb-6 border-2 border-dashed border-primary/50 bg-secondary/30 hover:bg-secondary/50 transition-colors duration-300 rounded-xl p-4 sm:p-6 flex items-center justify-center min-h-[150px] relative">
+      <div className="mb-6 border-2 border-dashed border-primary/50 bg-secondary/30 hover:bg-secondary/50 transition-colors duration-300 rounded-2xl p-4 sm:p-6 flex items-center justify-center min-h-[150px] relative">
         {preview ? (
           <div className="relative w-full h-full max-h-[300px]">
             <img src={preview} alt="Preview" className="w-full h-auto mx-auto rounded-lg object-contain max-h-[280px]"/>
@@ -88,7 +88,7 @@ const DetectorSection = () => {
 
       {/* Tampilan Kartu Hasil */}
       {result && (
-        <div className="mt-8 p-6 bg-secondary rounded-xl border border-primary/30 text-left animate-fadeInUp">
+        <div className="mt-8 p-6 bg-secondary rounded-2xl border border-primary/30 text-left animate-fadeInUp">
           <h3 className="text-2xl font-bold mb-2 text-dark-slate">Hasil Deteksi</h3>
           <p className="text-xl">Jenis Sampah: <span className="font-bold text-primary-dark">{result.label}</span></p>
           <p className="text-lg">Tingkat Kepercayaan: <span className="font-semibold text-slate-700">{result.confidence}</span></p>
