@@ -2,17 +2,41 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    // DIUBAH: Latar belakang hijau tua yang elegan menyesuaikan tema
-    <footer className="bg-emerald-700 text-white py-12 border-t border-emerald-600">
-      <div className="container mx-auto px-6 text-center">
-        <div className="mb-6">
-          <p className="text-2xl font-bold mb-2 tracking-wide">WasteClassifier</p>
-          <p className="text-sm text-emerald-200">&copy; 2025. All rights reserved.</p>
+    <footer className="bg-emerald-900 text-white py-10 border-t border-emerald-800">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          
+          {/* Bagian Kiri: Identitas Singkat */}
+          <div className="text-center md:text-left">
+            <h2 className="text-xl font-bold tracking-tight">Waste<span className="text-emerald-400">Classifier</span></h2>
+            <p className="text-xs text-emerald-300/80 mt-1 max-w-xs">
+              Solusi cerdas klasifikasi sampah berbasis Deep Learning untuk masa depan yang lebih hijau.
+            </p>
+          </div>
+
+          {/* Bagian Tengah: Link Navigasi Cepat */}
+          <div className="flex space-x-8 text-sm font-medium">
+            <a href="#hero" className="text-emerald-200 hover:text-white transition-colors">Beranda</a>
+            <a href="#showcase" className="text-emerald-200 hover:text-white transition-colors">Deteksi</a>
+            <a href="#about" className="text-emerald-200 hover:text-white transition-colors">Tentang</a>
+          </div>
+
+          {/* Bagian Kanan: Sosial Media / Icon */}
+          <div className="flex space-x-4">
+            <a href="#" className="p-2 bg-emerald-800 rounded-full hover:bg-emerald-700 transition-all">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="#" className="p-2 bg-emerald-800 rounded-full hover:bg-emerald-700 transition-all">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+          </div>
         </div>
-        <div className="flex justify-center space-x-6">
-          <a href="#hero" className="text-emerald-100 hover:text-white hover:underline transition-all">Beranda</a>
-          <a href="#showcase" className="text-emerald-100 hover:text-white hover:underline transition-all">Deteksi</a>
-          <a href="#about" className="text-emerald-100 hover:text-white hover:underline transition-all">Tentang</a>
+
+        {/* Garis Pemisah & Copyright */}
+        <div className="mt-10 pt-6 border-t border-emerald-800/50 text-center">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-emerald-400/60 font-medium">
+            &copy; 2025 Waste Classifier Project. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
