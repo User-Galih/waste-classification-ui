@@ -15,14 +15,14 @@ const TechStackSection = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-slate mb-6">Tentang Emerald Waste Classifier</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark-slate mb-6">Tentang Waste Classifier</h2>
           
           <div className="max-w-4xl bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm">
             {/* Visi Proyek */}
             <div className="mb-10">
               <h3 className="text-2xl font-bold text-emerald-700 mb-4">Misi Kami: Teknologi untuk Bumi</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                Emerald hadir bukan sekadar sebagai aplikasi, melainkan sebagai upaya nyata untuk meningkatkan literasi pengelolaan sampah di Indonesia. 
+                Waste CLassifier hadir bukan sekadar sebagai aplikasi, melainkan sebagai upaya nyata untuk meningkatkan literasi pengelolaan sampah di Indonesia. 
                 Kami percaya bahwa pemilahan sampah yang tepat sejak dari sumbernya adalah kunci utama menuju sistem daur ulang yang efektif dan lingkungan yang berkelanjutan.
               </p>
             </div>
